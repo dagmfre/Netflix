@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken");
 const passport = require("passport");
 require("dotenv").config();
 const mongoose = require("mongoose");
-const session = require("express-session");
+const session = require('cookie-session');
 const passportLocalMongoose = require("passport-local-mongoose");
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const FacebookStrategy = require("passport-facebook").Strategy;
