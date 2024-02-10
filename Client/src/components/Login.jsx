@@ -23,7 +23,7 @@ export default function Login() {
   const handleRegister = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("https://netflix-api-6lk8.onrender.com/login", {
+      const response = await axios.post("https://netflix-app-server.up.railway.app/login", {
         email: email,
         password: password,
       });

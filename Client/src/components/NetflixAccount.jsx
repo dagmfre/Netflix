@@ -12,7 +12,7 @@ export default function NetflixMainPage() {
     const token = localStorage.getItem("token");
     sessionStorage.setItem("username", username)
     axios
-      .get("https://netflix-api-6lk8.onrender.com/protected", {
+      .get("https://netflix-app-server.up.railway.app/protected", {
         headers: {
           Authorization: token,
         },

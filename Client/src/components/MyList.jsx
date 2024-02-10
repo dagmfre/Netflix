@@ -10,7 +10,7 @@ export default function MyList(title) {
   const deleteMovieList = async (title) => {
     try {
       await axios.delete(
-        `https://netflix-api-6lk8.onrender.com/user-movie-list/${title}`
+        `https://netflix-app-server.up.railway.app/user-movie-list/${title}`
       );
     } catch (err) {
       console.log(err);
@@ -24,7 +24,7 @@ export default function MyList(title) {
   const deleteAllMovieList = async () => {
     try {
       await axios.delete(
-        `https://netflix-api-6lk8.onrender.com/delete-movie-list`
+        `https://netflix-app-server.up.railway.app/delete-movie-list`
       );
     } catch (err) {
       console.log(err);
@@ -35,7 +35,7 @@ export default function MyList(title) {
     const fetchMovieListInfo = async () => {
       try {
         const response = await axios.get(
-          "https://netflix-api-6lk8.onrender.com/user-movie-list"
+          "https://netflix-app-server.up.railway.app/user-movie-list"
         );
 
         setFetchedMovieListData(response.data);

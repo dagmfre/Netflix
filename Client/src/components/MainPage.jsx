@@ -2077,7 +2077,7 @@ export default function MainPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const apiUrl = "https://netflix-api-6lk8.onrender.com/user-movie-list";
+        const apiUrl = "https://netflix-app-server.up.railway.app/user-movie-list";
         const data = {
           MovieTitle,
           MovieImgURL,
