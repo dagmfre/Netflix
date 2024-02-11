@@ -1,6 +1,6 @@
 # Netflix Clone
 
-A complete clone of Netflix with some additional features built with MERN stack and TMDB API. 
+A complete clone of Netflix, enhanced with additional features and developed using the MERN stack and TMDB API
 
 ![image](https://github.com/dagmfre/Netflix/assets/96683816/6949ddb6-f6b1-4c9b-9e2b-5c8784623c3f)
 
@@ -27,7 +27,7 @@ Additional features:
 
 Work in progress
 
--   Advanced search
+- Advanced search
 - Filter movies by genres, release year and duration.
 - User mention
 
