@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const port = process.env.PORT || 3001;
 const cors = require("cors");
 const { hashSync, compareSync } = require("bcrypt");
 const jwt = require("jsonwebtoken");
@@ -338,4 +339,6 @@ app.get(
   }
 );
 
-app.listen(3001, () => console.log("Listening to port 3001"));
+app.listen(port, "0.0.0.0", function () {
+  console.log("Listening to port 3001")
+});
