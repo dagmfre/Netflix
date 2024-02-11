@@ -6,7 +6,7 @@ A complete clone of Netflix, enhanced with additional features and developed usi
 
 
 ## WHY?
-I build the app for the following reasons
+I built the app for the following **reasons:**
 - **Skill Enhancement**: Building this Netflix clone using the MERN stack provided an opportunity to sharpen skills on building RESTful API, Integrating Authentication, database management, Responsive & Interactive website, 
 - **Showcase My Design Philosophy**: Through building the website, I can showcase my design philosophy, emphasizing simplicity, usability, aesthetics, and accessibility.
 - **Demonstrating My Capabilities**: -  Showcasing my ability to design, develop, and deploy a complex, full-fledged application. Highlighting my problem-solving, critical thinking, and technical writing skills through project documentation.
@@ -15,18 +15,17 @@ I build the app for the following reasons
  Live Demo🔗: [Click me](https://netflix-app-clonee.vercel.app/)
 
 ##  FEATURES
-Main features:
+**Main features:**
 - Dynamic movie fetching
 - Different categories of movies from "Popular ones" to "Upcoming" to "Now playing worldwide  
 - Suggesting users to watch related movies of the selected one
 - Allowing users to collect their favorite movies
 
-Additional features:  
+**Additional features:**  
 - A rock-solid JWT and session-based authentication, including Google & Facebook sign-in and logout features  
 - Allowing users to remove unwanted movies from their favorites list both individually and in bulk
 
-Work in progress
-
+**Work in progress:**
 - Advanced search
 - Filter movies by genres, release year and duration.
 - User mention
