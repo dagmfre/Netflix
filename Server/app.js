@@ -7,7 +7,8 @@ const jwt = require("jsonwebtoken");
 const passport = require("passport");
 require("dotenv").config();
 const mongoose = require("mongoose");
-const session = require('express-session');
+const session = require("express-session");
+const MemoryStore = require("memorystore")(session);
 const passportLocalMongoose = require("passport-local-mongoose");
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const FacebookStrategy = require("passport-facebook").Strategy;
@@ -38,6 +39,9 @@ app.use(
     resave: false,
     saveUninitialized: false,
     proxy: true,
+    store: new MemoryStore({
+      checkPeriod: 86400000, // prune expired entries every 24h
+    }),
     cookie: {
       sameSite: "none",
       secure: true,
@@ -100,7 +104,8 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: "https://netflix-app-server.up.railway.app/auth-netflix-account",
+      callbackURL:
+        "https://netflix-app-server.up.railway.app/auth-netflix-account",
       userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo",
     },
     function (accessToken, refreshToken, profile, cb) {
@@ -150,11 +155,11 @@ app.get(
   })
 );
 
-app.get('/check-user-auth', (req, res) => {
+app.get("/check-user-auth", (req, res) => {
   if (req.user) {
     res.status(200).json({ user: req.user });
   } else {
-    res.status(401).json({ message: 'User is Unauthorized' });
+    res.status(401).json({ message: "User is Unauthorized" });
   }
 });
 
@@ -167,7 +172,7 @@ app.get(
 
     successRedirect:
       "https://netflix-app-clonee.vercel.app/auth-netflix-account",
-  }),
+  })
 );
 
 app.post("/user-movie-list", async (req, res) => {
@@ -340,5 +345,5 @@ app.get(
 );
 
 app.listen(port, "0.0.0.0", function () {
-  console.log("Listening to port 3001")
+  console.log("Listening to port 3001");
 });
