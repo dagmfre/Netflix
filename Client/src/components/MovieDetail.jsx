@@ -101,6 +101,7 @@ export default function MovieDetail(props) {
         </div>
       </div>
       <div className="detail-related-cont">
+        <p className="related-text">Related Movies</p>
         {relatedMoviesCont.map((relatedMovies, index) => (
           <div key={index} className="realted-cards">
             <div className="related-img-cont">

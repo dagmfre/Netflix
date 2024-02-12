@@ -2075,6 +2075,15 @@ iframe {
   margin: 0;
   font-weight: 600;
 }
+.related-text {
+  position: absolute;
+  color: white;
+  top: 1.7%;
+  left: 3.2%;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
 @media screen and (max-width: 1370px) {
   .movie-list-cont {
     grid-template: auto / 1fr 1fr 1fr;
@@ -2089,7 +2098,7 @@ iframe {
         grid-template: auto / 1fr 1fr;
       }
       @media screen and (max-width: 800px) {
-        .no-movie-msg{
+        .no-movie-msg {
           white-space: inherit;
         }
         .card-cont {
@@ -2202,6 +2211,10 @@ iframe {
                 }
                 @media screen and (max-width: 490px) {
                   @media screen and (max-width: 450px) {
+                    .related-text {
+                      top: 40px;
+                      left: 7%;
+                    }
                     .cards:nth-child(2) .hovered-card:hover,
                     .cards:nth-child(4) .hovered-card:hover,
                     .cards:nth-child(6) .hovered-card:hover {
