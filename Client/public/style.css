@@ -1801,6 +1801,7 @@ iframe {
 }
 
 .detail-related-cont {
+  position: relative;
   display: grid;
   grid-template: auto / 1fr 1fr 1fr;
   max-width: 955px;
