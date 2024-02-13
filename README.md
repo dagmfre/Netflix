@@ -20,6 +20,7 @@ I built the app for the following **reasons:**
 - Different categories of movies from "Popular ones" to "Upcoming" to "Now playing worldwide  
 - Suggesting users to watch related movies of the selected one
 - Allowing users to collect their favorite movies
+- All users account information and favourite movie lists are stored in Atlas mongoDB database
 
 **Additional features:**  
 - A rock-solid JWT and session-based authentication, including Google & Facebook sign-in and logout features  
