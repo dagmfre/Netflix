@@ -6,7 +6,7 @@ A complete clone of Netflix, enhanced with additional features and developed usi
 
 
 ## WHY?
-I built the app for the following **reasons:**
+I built the app because of the following 2 main **reasons:**
 - **Skill Enhancement**: Building this Netflix clone using the MERN stack provided an opportunity to sharpen skills on building RESTful API, Integrating Authentication, database management, Responsive & Interactive website, 
 - **Demonstrating My Capabilities**: -  Showcasing my ability develop, and deploy a complex, full-fledged application. Highlighting my problem-solving, critical thinking, writing clean code & project documentation skills.
 
