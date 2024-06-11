@@ -25,7 +25,7 @@ function SignUp() {
   const handleRegister = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("https://netflix-app-server.up.railway.app/register", {
+      const response = await axios.post("https://netflix-clonee-api.vercel.app/register", {
         email: email,
         password: password,
       });
@@ -60,14 +60,14 @@ function SignUp() {
             Sign Up
           </button>
           <div className="div-img">
-            <a href="https://netflix-app-server.up.railway.app/auth/google">
+            <a href="https://netflix-clonee-api.vercel.app/auth/google">
               <img
                 className="google"
                 src="google.png"
                 alt="google-logo"
               />
             </a>
-            <a href="https://netflix-app-server.up.railway.app/auth/facebook">
+            <a href="https://netflix-clonee-api.vercel.app/auth/facebook">
               <img className="fb" src="fb.png" alt="fb-logo" />
             </a>
           </div>
