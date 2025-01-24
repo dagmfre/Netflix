@@ -138,6 +138,11 @@ passport.use(
   )
 );
 
+// Welcome route
+app.get("/", (req, res) => {
+  res.send("Welcome to Netflix Server");
+});
+
 // Creating Routes for Google & FB authentication
 app.get(
   "/auth/google",
