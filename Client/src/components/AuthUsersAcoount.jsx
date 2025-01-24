@@ -8,7 +8,7 @@ export default function AuthUsersAcoount() {
   const navigate = useNavigate();
   useEffect(() => {
     axios 
-      .get("https://netflix-clonee-api.vercel.app/check-user-auth", { withCredentials: true })
+      .get("https://netflix-clonee-api.onrender.com/check-user-auth", { withCredentials: true })
       .then((res) => {
         if (res.status === 200) {
           setUsername(res.data.user.username);

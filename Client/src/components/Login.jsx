@@ -23,7 +23,7 @@ export default function Login() {
   const handleRegister = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("https://netflix-clonee-api.vercel.app/login", {
+      const response = await axios.post("https://netflix-clonee-api.onrender.com/login", {
         email: email,
         password: password,
       });
